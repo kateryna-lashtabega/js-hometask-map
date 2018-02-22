@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Map</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<section class="ba-section__map">
+		<form class="ba-map__selection">
+			<div class="ba-point1"><label>Input address #1 <input id="point1" type="text"></label>
+				<a class="ba-button" href="#" id="point1-submit">Ok</a>
+			</div>
+			<div class="ba-point2"><label>Input address #2 <input id="point2" type="text"></label>
+				<a  class="ba-button" href="#" id="point2-submit">Ok</a>
+			</div>
+			<a  class="ba-button" href="#" id="route">See the route</a>
+			<a  class="ba-button" href="#" id="reset">Reset</a>
+		</form>
+		<div class="ba-map__item" id="map"></div> 
+
+	</section>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhE9nBq4w-XvzwEsRtaWg2gyXRbj4Lqsg"
+    async defer></script>
+</body>
+</html>
